@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Interativo</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body data-theme="claro">
+
+    <!-- Header / Menu -->
+    <header>
+        <h1>Projeto Interativo</h1>
+        <nav>
+            <button id="btnContador">Contador Interativo</button>
+            <button id="btnGaleria">Galeria de Imagens</button>
+            <button id="btnClaro">Tema Claro</button>
+            <button id="btnEscuro">Tema Escuro</button>
+        </nav>
+    </header>
+
+    <!-- Main / Exercícios -->
+    <main>
+        <!-- Contador Interativo -->
+        <section id="contador" class="exercicio ativo">
+            <h2>Contador Interativo</h2>
+            <div class="contador-container">
+                <input id="passo" type="number" placeholder="Digite o passo" min="0">
+                <div class="botoes-contador">
+                    <button id="incremento">+</button>
+                    <span id="valorContador">0</span>
+                    <button id="decremento">-</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galeria de Imagens -->
+        <section id="galeria" class="exercicio">
+            <h2>Galeria de Imagens</h2>
+            <div id="imagem-principal-container">
+                <img id="imagem-principal" src="./assets/img/angular.png" alt="Imagem principal">
+            </div>
+            <div id="miniaturas"></div>
+        </section>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
